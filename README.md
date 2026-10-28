@@ -2,10 +2,7 @@
 
 Desktop app to manage library books, members, loans and overdue fines.
 
-> **Recreation note:** I originally built a library management system as a college project
-> (Siva Subramaniya Nadar College of Engineering, 2018-22). That code is no longer available, so this
-> repository is a **fresh 2026 recreation** of the same idea with the same stack
-> (Python + Tkinter). The git history dates are real.
+> Recreated in 2026. Originally built 2018–22.
 
 ## Features
 - Add books (multiple copies) and members
