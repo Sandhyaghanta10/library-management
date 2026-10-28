@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import messagebox, ttk
 from typing import Callable
 
+from .demo import seed_demo
 from .models import LibraryError
 from .repository import SqliteRepository
 from .service import LibraryService
@@ -99,8 +100,10 @@ class LibraryApp(ttk.Frame):
         return tab
 
 
-def main(db_path: str = "library.db") -> None:
+def main(db_path: str = "library.db", demo: bool = False) -> None:
     repo = SqliteRepository(db_path)
+    if demo:
+        seed_demo(repo)
     root = tk.Tk()
     root.title("Library Management System")
     LibraryApp(root, repo, LibraryService(repo))

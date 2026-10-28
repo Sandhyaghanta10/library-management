@@ -24,8 +24,9 @@ Splitting the layers means the rules are unit-tested without a display or a real
 ## Run
 ```bash
 uv venv && uv pip install pytest
-.venv/bin/python -m pytest -q        # 11 tests
-python3 -m library                   # launches the GUI, data stored in library.db
+.venv/bin/python -m pytest -q        # 14 tests
+python3 -m library --demo            # launch the GUI with sample books, members and (historical) loans
+python3 -m library                   # launch the GUI with your own data, stored in library.db
 ```
 The GUI needs a Python build with working Tcl/Tk (the macOS system Python or python.org builds work;
 some standalone Python builds ship without Tcl).
